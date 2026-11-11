@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<title>徽檐巷 · 开业活动配置方案</title>
+<style>
+:root{--ink:#12100c;--g1:#2b2118;--g2:#4a3a26;--gold:#c9a227;--gold2:#e8c97a;--ember:#c0392b;--sand:#f8f4ea;--paper:#fdfbf4;--line:#e6ddc8;--txt:#3f3a30;--mute:#8b8375}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",Arial,sans-serif;background:var(--ink);color:var(--txt);line-height:1.6;padding:0 0 40px}
+.wrap{max-width:520px;margin:0 auto;background:var(--paper);overflow:hidden}
+.cover{background:linear-gradient(165deg,#241c14,#4a3a26 70%,#6b5232);padding:38px 24px 32px;color:#fff;position:relative;overflow:hidden}
+.cover::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle,rgba(232,201,122,.35) 1px,transparent 1.3px);background-size:30px 30px;opacity:.22}
+.cover .k{position:relative;font-size:10px;letter-spacing:.36em;color:var(--gold2);margin-bottom:12px}
+.cover h1{position:relative;font-size:26px;font-weight:800;letter-spacing:.03em;line-height:1.3}
+.cover .s{position:relative;font-size:12px;color:rgba(255,255,255,.66);margin-top:8px;line-height:1.7}
+.cover .tags{position:relative;margin-top:14px;display:flex;gap:6px;flex-wrap:wrap}
+.cover .tags span{font-size:10px;padding:3px 9px;border-radius:20px;border:1px solid rgba(232,201,122,.5);color:var(--gold2)}
+.sec{padding:28px 20px 4px}
+.chap{display:flex;align-items:center;gap:9px;margin-bottom:13px}
+.chap .n{font-size:10.5px;font-weight:800;color:var(--gold);border:1px solid rgba(201,162,39,.45);border-radius:4px;padding:2px 6px;flex:none}
+.chap h2{font-size:17px;font-weight:800;color:var(--g1);line-height:1.35}
+p{font-size:13.4px;line-height:1.85;color:var(--txt);margin-bottom:8px}
+p b{color:#8a5a18}
+.muted{font-size:11.6px;color:var(--mute);line-height:1.7}
+.card{background:var(--sand);border-radius:12px;padding:14px 13px;margin-bottom:10px}
+.card.dark{background:linear-gradient(150deg,#241c14,#4a3a26);color:#fff}
+.card.dark p{color:rgba(255,255,255,.85)}
+.card.dark b{color:var(--gold2)}
+table{width:100%;border-collapse:collapse;margin:8px 0;font-size:11.8px;table-layout:fixed}
+th,td{border:1px solid #e0d6bf;padding:6px 6px;text-align:left;vertical-align:top;line-height:1.55;word-break:break-word}
+th{background:#efe8d6;color:var(--g1);font-weight:700}
+td b{color:#8a5a18}
+.act{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:11px}
+.act .hd{display:flex;align-items:center;gap:9px;margin-bottom:9px}
+.act .hd .no{width:22px;height:22px;border-radius:50%;background:var(--g1);color:var(--gold2);font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;flex:none}
+.act .hd .t{font-size:13.5px;font-weight:800;color:var(--g1)}
+.act .hd .tm{margin-left:auto;font-size:9.8px;color:var(--ember);font-weight:700;flex:none}
+.step{display:flex;gap:8px;font-size:12px;line-height:1.7;color:var(--txt);padding:3px 0}
+.step .k{flex:none;color:var(--mute);width:56px;font-size:11px}
+.warn{background:#fdece8;border-left:3px solid var(--ember);padding:9px 11px;border-radius:0 8px 8px 0;margin:9px 0;font-size:11.8px;line-height:1.8;color:#6b3a32}
+.warn b{color:var(--ember)}
+.hl{background:#fdf6e3;border-left:3px solid var(--gold);padding:9px 11px;border-radius:0 8px 8px 0;margin:9px 0;font-size:12px;line-height:1.8;color:#5a4a32}
+.hl b{color:#8a5a18}
+.tl{position:relative;margin:12px 0 4px}
+.tl::before{content:"";position:absolute;left:5px;top:6px;bottom:8px;width:1px;background:var(--line)}
+.tl .i{position:relative;padding:0 0 12px 20px;font-size:11.8px;line-height:1.55}
+.tl .i::before{content:"";position:absolute;left:1px;top:5px;width:8px;height:8px;border-radius:50%;background:var(--paper);border:2px solid var(--g2)}
+.tl .i.key::before{background:var(--ember);border-color:var(--ember)}
+.tl .i b{color:var(--g1)}
+.ck{display:grid;grid-template-columns:1fr;gap:5px;margin:8px 0}
+.ck .r{display:flex;gap:8px;background:#fff;border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:11.6px;line-height:1.5}
+.ck .r .b{flex:none;width:14px;height:14px;border:1.5px solid #c9bfa5;border-radius:3px;margin-top:1px}
+.ck .r .x{color:var(--mute);font-size:10.2px;display:block;margin-top:1px}
+.foot{background:linear-gradient(160deg,#241c14,#4a3a26);color:rgba(255,255,255,.5);padding:18px;text-align:center;font-size:10.2px;line-height:1.9}
+.foot b{color:var(--gold2)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="cover">
+  <div class="k">OPENING CAMPAIGN · 配置方案</div>
+  <h1>徽檐巷 · 开业活动</h1>
+  <div class="s">浇头面 · 馄饨 · 粿 ｜ 60–80㎡ ｜ 人均 16–20 元<br>现阶段只激活账号、配活动，暂不开通支付</div>
+  <div class="tags"><span>券包 5 张</span><span>每日抽奖</span><span>五倍当餐免</span><span>可直发微信</span></div>
+</div>
+
+<!-- 00 -->
+<div class="sec">
+  <div class="chap"><span class="n">00</span><h2>先说三条总原则</h2></div>
+  <div class="hl">
+    <b>① 券要小、门槛要低。</b>这家店人均 16–20 元，做“满 100 减 30”没人用。所有券面额控制在 5–20 元。<br>
+    <b>② 活动只做 30 天。</b>小店的现金流经不起长期让利，开业期集中打，之后切回常规。<br>
+    <b>③ 一张券只能办一件事。</b>拉首单的、提客单的、带人的、认品类的，分开设计，不要一张券什么都想干。<br>
+    <b>④ 券不是用来降价的，是用来让客人多点一个菜的。</b>门槛设在“正常客单 × 1.15”，客人为了用券会多凑一道菜，你的收入没降，毛利结构变好了。
+  </div>
+  <div class="tl">
+    <div class="i"><b>D-7</b> 建群、发预告（门头没装完也能拉人）</div>
+    <div class="i"><b>D-3</b> 券包上线，开始发放（限量 500 份）</div>
+    <div class="i key"><b>D-1</b> 抽奖活动上线，群内开始每日抽</div>
+    <div class="i key"><b>D1</b> 开业，五倍储值当餐免启动</div>
+    <div class="i"><b>D15</b> 五倍储值截止，切常规储值</div>
+    <div class="i"><b>D30</b> 券包、抽奖第一轮复盘</div>
+  </div>
+</div>
+
+<!-- 01 -->
+<div class="sec">
+  <div class="chap"><span class="n">01</span><h2>开业券包：5 张，分四件事</h2></div>
+  <div class="act">
+    <div class="hd"><span class="no">A</span><span class="t">整个券包</span><span class="tm">30 天</span></div>
+    <div class="step"><span class="k">发放时间</span><span>开业前 3 天开始，开业后 14 天停止发放</span></div>
+    <div class="step"><span class="k">有效期</span><span>领券起 30 天（首单券单独设 7 天）</span></div>
+    <div class="step"><span class="k">总量</span><span><b>500 份</b>（按 60–80㎡ 店，够开业期用）</span></div>
+    <div class="step"><span class="k">限领</span><span>每人限领 <b>1 份</b>，可转赠（帮老板做“带人来”）</span></div>
+    <div class="step"><span class="k">渠道</span><span>门店二维码 + 微信群 + 朋友圈 + 开业海报</span></div>
+  </div>
+
+  <table>
+    <tr><th style="width:26%">券名</th><th style="width:14%">面额</th><th style="width:20%">门槛</th><th style="width:16%">让利率</th><th>有效期 / 目的</th></tr>
+    <tr><td><b>首单券</b></td><td>4 元</td><td>满 25</td><td>16%</td><td>7 天 · 拉首单</td></tr>
+    <tr><td><b>双人券</b></td><td>7 元</td><td>满 50</td><td>14%</td><td>30 天 · 提客单</td></tr>
+    <tr><td><b>三人券</b></td><td>11 元</td><td>满 80</td><td>14%</td><td>30 天 · 拉多人</td></tr>
+    <tr><td><b>粿兑换券</b></td><td>免费 1 份</td><td>满 30</td><td>13%</td><td>30 天 · <b>品类认知</b></td></tr>
+    <tr><td><b>带友券</b></td><td>15 元</td><td>满 100</td><td>15%</td><td>30 天 · 拉新（限 3 人以上）</td></tr>
+  </table>
+
+  <div class="hl"><b>为什么第 4 张是“粿”而不是钱：</b>粿是这家店唯一的差异化，但本地人几乎没吃过。送一份粿的成本 3–4 元，比减 5 块钱有用得多——<b>客人第一次吃懂了，第二次才会自己点。</b></div>
+
+  <p class="muted">后台配置要点：5 张券放同一个“券包/领券活动”里，一次领取全部到账；每张券单独设门槛和有效期；粿券要绑定“粿”这个商品，不能抵其他菜。</p>
+
+  <div class="warn"><b>成本测算：</b>500 份全领走，按 35% 核销率、平均单券让利 6 元算，总成本约 <b>1050 元</b>。若开业期只有 300 人到店，人均让利不到 4 元——可控。</div>
+
+  <div class="hl"><b>为什么门槛是 25 / 50 / 80 / 30 / 100：</b>按人均 22 测算，单人正常吃 22、双人 45、三人 70、四人 90。门槛全部卡在“正常客单 + 15%~20%”的位置——差了 3–8 元，正好是一份小菜或一碗馄饨的距离，<b>客人会为了用券多点一道，而不是干掉你的毛利。</b></div>
+</div>
+
+<!-- 02 -->
+<div class="sec">
+  <div class="chap"><span class="n">02</span><h2>社群每日抽奖：制造“每天来看看”的习惯</h2></div>
+  <div class="act">
+    <div class="hd"><span class="no">B</span><span class="t">抽奖规则</span><span class="tm">30 天</span></div>
+    <div class="step"><span class="k">上线</span><span>开业前 1 天，持续 30 天</span></div>
+    <div class="step"><span class="k">频次</span><span>每人每天 <b>1 次</b>，即时开奖</span></div>
+    <div class="step"><span class="k">参与</span><span>群内点抽奖链接（不要求转发、不要求集赞）</span></div>
+    <div class="step"><span class="k">中奖率</span><span><b>100%</b>——不设“谢谢参与”，最低也是 2 元券</span></div>
+    <div class="step"><span class="k">券有效期</span><span>中奖起 <b>7 天</b>，逼客人尽快来</span></div>
+  </div>
+
+  <table>
+    <tr><th style="width:22%">奖项</th><th style="width:36%">奖品</th><th style="width:18%">每日份数</th><th>单份成本</th></tr>
+    <tr><td><b>特等奖</b></td><td>单人免单（限 1 份主食，约 25 元）</td><td>每周 1 份</td><td>约 25 元</td></tr>
+    <tr><td><b>一等奖</b></td><td>招牌粿 1 份</td><td>3 份</td><td>约 4 元</td></tr>
+    <tr><td><b>二等奖</b></td><td>5 元券（满 25 可用）</td><td>8 份</td><td>约 1 元（按20%核销）</td></tr>
+    <tr><td><b>三等奖</b></td><td>2 元无门槛券</td><td>20 份</td><td>约 0.4 元</td></tr>
+  </table>
+
+  <div class="warn"><b>每日成本约 30–32 元，30 天约 960 元。</b>这笔钱买的不是奖品，是“群每天有人冒泡”——群一旦死掉，后面所有活动都推不动。</div>
+
+  <p class="muted">后台配置要点：抽奖做成“转盘/盲盒”形态最直观；奖品直接发券，中奖后自动进卡包；特等奖设置“每天限 1 人、每周最多 1 次开奖”，避免超发。</p>
+</div>
+
+<!-- 03 -->
+<div class="sec">
+  <div class="chap"><span class="n">03</span><h2>消费五倍当餐免费（储值锁客）</h2></div>
+  <div class="act">
+    <div class="hd"><span class="no">C</span><span class="t">规则</span><span class="tm">15 天</span></div>
+    <div class="step"><span class="k">时间</span><span>开业当天起 <b>15 天</b>，之后切常规储值</span></div>
+    <div class="step"><span class="k">门槛</span><span>当餐消费 <b>满 40 元</b> 可参与</span></div>
+    <div class="step"><span class="k">规则</span><span>储值 = 当餐金额 × 5，<b>当餐免单</b></span></div>
+    <div class="step"><span class="k">上限</span><span>单笔免单最高 <b>80 元</b>（防大桌套利）</span></div>
+    <div class="step"><span class="k">不叠加</span><span>不可与代金券、团购券同时使用</span></div>
+  </div>
+
+  <p><b>换算成折扣：</b>付 250 得 300 的价值 → <b>相当于 8.3 折</b>。对这家店来说，比直接打 8 折划算——因为钱先收进来了，客人还一定会再来。</p>
+
+  <table>
+    <tr><th style="width:34%">当餐消费</th><th style="width:30%">储值金额</th><th>当餐实付</th></tr>
+    <tr><td>40 元</td><td>200 元</td><td><b>0 元（免单）</b></td></tr>
+    <tr><td>55 元</td><td>275 元</td><td><b>0 元（免单）</b></td></tr>
+    <tr><td>80 元及以上</td><td>400 元</td><td><b>0 元（免单，上限 80）</b></td></tr>
+  </table>
+
+  <div class="warn"><b>三条必须和老板说清的：</b><br>
+  ① 这笔钱是<b>预收款，不是收入</b>。要单独记一本账，不能拿去补装修或进货，否则后面客人来吃就是纯亏。<br>
+  ② 储值 200 元，按人均 20 算要 <b>10 次</b> 才用完——所以一定要配“余额提醒”，不然客人会忘。<br>
+  ③ 开业 15 天后必须停，切回常规储值（<b>充 100 送 15</b> 或送一份粿），否则长期 8.3 折撑不住。</div>
+</div>
+
+<!-- 04 -->
+<div class="sec">
+  <div class="chap"><span class="n">04</span><h2>三项活动加起来，花多少钱</h2></div>
+  <table>
+    <tr><th style="width:34%">项目</th><th style="width:28%">周期</th><th>预算</th></tr>
+    <tr><td>开业券包（500 份）</td><td>30 天</td><td><b>约 1050 元</b></td></tr>
+    <tr><td>社群每日抽奖</td><td>30 天</td><td><b>约 960 元</b></td></tr>
+    <tr><td>五倍当餐免</td><td>15 天</td><td>不额外花钱（让利已在折扣里）</td></tr>
+    <tr><td><b>合计让利</b></td><td>—</td><td><b>约 2000 元 / 30 天</b></td></tr>
+  </table>
+  <div class="hl"><b>对标的收入：</b>若开业期日均 800–1200 元，30 天流水 2.4–3.6 万，让利占比 <b>6–8%</b>——这是社区小店开业期的健康区间，再高就伤本。</div>
+</div>
+
+<!-- 05 -->
+<div class="sec">
+  <div class="chap"><span class="n">05</span><h2>后台要配的东西（可对着打勾）</h2></div>
+  <div class="ck">
+    <div class="r"><span class="b"></span><span>激活商家账号，完成门店信息（营业时间、地址、门头图）</span></div>
+    <div class="r"><span class="b"></span><span>建 5 张代金券：首单 5 元无门槛 / 满 30 减 8 / 满 50 减 15 / 满 60 减 20 / 粿兑换券<span class="x">每张单独设有效期与适用商品</span></span></div>
+    <div class="r"><span class="b"></span><span>建“开业券包”领券活动，5 张券打包，限量 500 份、每人 1 份</span></div>
+    <div class="r"><span class="b"></span><span>生成领券二维码与链接（用于群发、朋友圈、门店海报）</span></div>
+    <div class="r"><span class="b"></span><span>建抽奖活动，配置 4 档奖池与每日库存</span></div>
+    <div class="r"><span class="b"></span><span>建“五倍当餐免”储值活动（<b>需支付开通后上线</b>，先把规则建好）</span></div>
+    <div class="r"><span class="b"></span><span>建常规储值“充 100 送 15”，设为开业 15 天后生效</span></div>
+    <div class="r"><span class="b"></span><span>打开活动数据看板，确认能看到：领券数 / 核销数 / 核销率 / 储值笔数</span></div>
+  </div>
+  <div class="warn"><b>关于“暂不开通支付”：</b>券包和抽奖可以先建、先发、先拉群；<b>五倍储值和券的实际核销都要等支付开通</b>。建议先把规则建好，支付一开就能上线，不用等。</div>
+</div>
+
+<!-- 06 -->
+<div class="sec">
+  <div class="chap"><span class="n">06</span><h2>给老板的三句话（发群里用）</h2></div>
+  <div class="card dark">
+    <p style="margin-bottom:8px"><b>开业前发群：</b></p>
+    <p style="margin-bottom:10px">“咱们店下周开业，先给大家发个见面礼——5 张券直接领，里面有一份<b>免费的粿</b>，很多人没吃过，来尝尝。”</p>
+    <p style="margin-bottom:8px"><b>开业当天发群：</b></p>
+    <p style="margin-bottom:10px">“今天开业，群里每天抽一次奖，最小的奖也是 2 块钱。<b>今天消费满 50，储值 5 倍这顿直接免单。</b>”</p>
+    <p style="margin-bottom:8px"><b>开业一周后发群：</b></p>
+    <p style="margin-bottom:0">“这周抽出去的券还有三天到期，别浪费了。顺便说一句，粿是我们老家那边的做法，皮是米做的，比煎饺糯。”</p>
+  </div>
+</div>
+
+<div class="foot">
+  活动让利为结构性测算，<b>非承诺值</b><br>
+  具体券规则与活动配置以管家后台实际能力为准<br><br>
+  <b>徽檐巷 · 开业活动配置方案</b> · 2026.11
+</div>
+
+</div>
+</body>
+</html>
